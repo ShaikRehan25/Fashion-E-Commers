@@ -17,27 +17,27 @@ function CartItems() {
           <p>Remove</p>
         </div>
         <hr />
-      {
-        all_products.map((e)=>{
-         if(CartItems[e.id]>0)
-          {
-            return <div>
-              <div className="cartitems-format">
-                <img src={e.image} alt="" className="carticon-product-icon"/>
-                <p>{e.name}</p>
-                <p>₹{e.new_price}</p>
-                <button className="cartitems-quantity">{CartItems[e.id]}</button>
-                <p>{e.new_price*CartItems[e.id]}</p>
-                <RxCross1  onClick={()=>{removeFromCart(e.id)}}/>
-              </div>
-              <hr />
-            </div>
-          }
-          return null;
-        })
-      }  
+      // {
+      //   all_products.map((e)=>{
+      //    if(CartItems[e.id]>0)
+      //     {
+      //       return <div>
+      //         <div className="cartitems-format">
+      //           <img src={e.image} alt="" className="carticon-product-icon"/>
+      //           <p>{e.name}</p>
+      //           <p>₹{e.new_price}</p>
+      //           <button className="cartitems-quantity">{CartItems[e.id]}</button>
+      //           <p>{e.new_price*CartItems[e.id]}</p>
+      //           <RxCross1  onClick={()=>{removeFromCart(e.id)}}/>
+      //         </div>
+      //         <hr />
+      //       </div>
+      //     }
+      //     return null;
+      //   })
+      // }  
 
-            {/* <div>
+             <div>
               <div className="cartitems-format cartitems-format-main">
                 <img src="https://rukminim2.flixcart.com/image/832/832/l02r1jk0/top/z/v/f/xxl-00395-top-adokedo-original-imagby5u4798h6uh.jpeg?q=70" alt="" className="carticon-product-icon"/>
                 <p>Name</p>
@@ -47,7 +47,7 @@ function CartItems() {
                 <RxCross1 className="cross-icon" onClick={()=>{removeFromCart()}}/>
               </div>
               <hr />
-            </div> */}
+            </div> 
 
             <div className="cartitems-down">
               <div className="cartitems-total">
