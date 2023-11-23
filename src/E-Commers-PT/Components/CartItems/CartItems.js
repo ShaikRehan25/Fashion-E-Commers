@@ -4,7 +4,7 @@ import { ShopContext } from "../../Context/ShopContext";
 import { RxCross1 } from "react-icons/rx";
 
 function CartItems() {
-  const { getTotalCartAmount,all_products, CartItems, removeFromCart } = useContext(ShopContext);
+  const { getTotalCartAmount, removeFromCart } = useContext(ShopContext);
   return (
     <>
       <div className="cartitems">
